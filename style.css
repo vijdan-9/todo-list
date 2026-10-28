@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    color: #312e81;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#myInput {
+    width: 100%;
+    max-width: 350px;
+    padding: 14px;
+    border: 2px solid #c4b5fd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#myInput:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 8px #c4b5fd;
+}
+
+#btn {
+    padding: 13px 25px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #5b21b6;
+}
+
+#list {
+    list-style: none;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+#list li {
+    background-color: white;
+    color: gray;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #00000012;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#list li i {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#list li i:hover {
+    color: red;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    #myInput {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    #btn {
+        width: 100%;
+        max-width: 350px;
+        padding: 12px;
+    }
+
+    #list {
+        margin-top: 25px;
+    }
+
+    #list li {
+        padding: 13px;
+        font-size: 14px;
+    }
+}
